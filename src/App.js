@@ -5,6 +5,9 @@ import ForeCast from "./components/forecast"
 import CurrentWeather from "./components/weather"
 import {API_WEATHER_URL} from "./api"
 import {API_WEATHER_KEY} from "./api"
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
 
 function App() {
 //hooks
@@ -32,9 +35,12 @@ function App() {
 
   return (
     <div className="container">
+      <NavBar/>
       <Search onSearchChange={handleOnSearchChange}/>
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {forecast && <ForeCast data={forecast}/>}
+      <Home/>
+      <Footer/>
     </div>
   );
 }

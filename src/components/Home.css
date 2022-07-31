@@ -1,0 +1,14 @@
+.home{
+    width: 1350px;
+    height: 675px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/src/assets/3.jpg);
+    margin: auto;
+}
+
+.home h2{
+
+    margin-left: 512px;
+    color: rgb(255, 255, 255);
+}
